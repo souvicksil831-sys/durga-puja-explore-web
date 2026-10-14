@@ -1,0 +1,9 @@
+/* Reusable parts: cards, tags, inputs, buttons */
+.card{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:14px;margin:10px 0;box-shadow:0 3px 0 var(--line)}
+.card h3{margin:0 0 4px;color:var(--red);font-family:'Tiro Bangla',serif}
+.tag{display:inline-block;font-size:.75rem;background:var(--soft);border:1px solid var(--line);border-radius:99px;padding:1px 9px;margin:2px 3px 0 0}
+.src{font-size:.78rem;opacity:.7}
+input[type=text]{width:100%;max-width:320px;padding:10px 14px;border-radius:99px;border:2px solid var(--line);background:var(--card);color:var(--ink);font:inherit;text-align:center}
+.btn{border:0;background:var(--red);color:#fff;padding:9px 18px;border-radius:99px;font:inherit;cursor:pointer;margin:4px}
+.btn.alt{background:var(--gold);color:#3a1410}
+.card{backdrop-filter:blur(6px)}

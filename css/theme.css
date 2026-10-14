@@ -1,0 +1,10 @@
+/* Colour tokens, dark/light themes, page background */
+:root{--bg:#fff7ec;--card:#fff;--ink:#3a1410;--red:#b3121b;--gold:#d99a1a;--soft:#fde7cf;--line:#f0cf9a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d0b0a;--card:#2b1210;--ink:#fbe9d0;--soft:#3a1a14;--line:#6b3a1c}}
+:root[data-theme="dark"]{--bg:#1d0b0a;--card:#2b1210;--ink:#fbe9d0;--soft:#3a1a14;--line:#6b3a1c}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Hind Siliguri',system-ui,sans-serif;line-height:1.55}
+#bgfx{position:fixed;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(255,247,236,.55),rgba(255,247,236,.9)),url(../assets/images/kaash-field.jpg) center/cover}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) #bgfx{background:linear-gradient(180deg,rgba(29,11,10,.7),rgba(29,11,10,.93)),url(../assets/images/kaash-field.jpg) center/cover}}
+:root[data-theme="dark"] #bgfx{background:linear-gradient(180deg,rgba(29,11,10,.7),rgba(29,11,10,.93)),url(../assets/images/kaash-field.jpg) center/cover}

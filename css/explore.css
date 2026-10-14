@@ -1,0 +1,12 @@
+/* Map pins and Pujo Guide chat */
+.map{width:100%;background:#e6f1e0;border-radius:14px;border:2px solid var(--line)}
+.pin{cursor:pointer}
+.pin circle{fill:var(--red);stroke:#fff;stroke-width:2}
+.pin:hover circle,.pin.on circle{fill:#ff7a00;r:11}
+.pin text{font-size:11px;fill:#3a1410;font-family:sans-serif}
+.chat{height:300px;overflow:auto;display:flex;flex-direction:column;gap:6px;padding:6px}
+.m{max-width:85%;padding:8px 12px;border-radius:14px;white-space:pre-line}
+.m.u{align-self:flex-end;background:var(--red);color:#fff}
+.m.b{background:var(--soft);border:1px solid var(--line)}
+.row{display:flex;gap:6px}
+.row input{flex:1;max-width:none;text-align:left}

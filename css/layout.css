@@ -1,0 +1,20 @@
+/* Page frame: alpona border, header, tab bar, sections, banners, scroll reveal */
+.alpona{height:16px;background:radial-gradient(circle at 8px 8px,var(--gold) 3px,transparent 4px) 0 0/16px 16px,repeating-linear-gradient(90deg,var(--red) 0 8px,transparent 8px 16px) bottom/100% 4px no-repeat}
+header{text-align:center;padding:18px 14px 6px;background:linear-gradient(180deg,var(--soft),var(--bg))}
+h1{font-family:'Tiro Bangla',serif;color:var(--red);margin:0;font-size:2rem}
+header p{margin:2px 0 0;opacity:.8}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:6px;overflow-x:auto;padding:8px 10px;background:var(--bg);border-bottom:2px solid var(--line)}
+nav button,.chip{border:1.5px solid var(--red);background:var(--card);color:var(--red);padding:7px 13px;border-radius:99px;font:inherit;white-space:nowrap;cursor:pointer}
+nav button.on,.chip.on{background:var(--red);color:#fff}
+main{max-width:860px;margin:auto;padding:14px}
+section{display:none}
+section.on{display:block;animation:in .4s}
+@keyframes in{from{opacity:0;transform:translateY(8px)}}
+footer{text-align:center;padding:20px;opacity:.7;font-size:.85rem}
+header{background:linear-gradient(180deg,rgba(253,231,207,.85),transparent)}
+.ban{height:120px;border-radius:14px;margin:6px 0 2px;background-size:cover;background-position:center;border:2px solid var(--line);display:flex;align-items:flex-end;padding:10px;color:#fff;font-family:'Tiro Bangla',serif;font-size:1.3rem;text-shadow:0 2px 6px #000}
+.intro{text-align:center;padding:10px 6px 4px}
+.intro h2{font-family:'Tiro Bangla',serif;color:var(--red);font-size:1.6rem;margin:6px 0}
+.sh{font-family:'Tiro Bangla',serif;color:var(--red);text-align:center;margin:30px 0 10px;font-size:1.4rem}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
